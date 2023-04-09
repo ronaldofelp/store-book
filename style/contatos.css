@@ -38,5 +38,29 @@
     font-size: 1em;
     font-weight: 400;
     background: url(../assets/Email.svg) no-repeat;
-    background-position: 5em;
+    background-position: 5%;
+}
+
+
+@media (min-width: 1024px) {
+
+    .contatos{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contatos__email{
+        width: 326px;
+    }
+
+}
+
+@media (min-width: 1728px){
+
+    .contatos{
+        
+        padding: 3em 35em;
+        height: 150px;
+        gap:50px
+    }
 }

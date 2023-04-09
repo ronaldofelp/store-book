@@ -60,12 +60,59 @@
             </ul>
 
             <img src="assets/Logo.svg" alt="Logo da Alura Books" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo--negrito">Alura</b>books</h1>
 
         </div>
 
+        <ul class="opcoes">
+
+
+
+            <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
+
+            <label for="opcoes-menu">
+
+                <li class="opcoes__item">Categorias</li>
+
+            </label>
+
+            <ul class="lista-menu">
+
+
+
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__item__link">Programação</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__item__link">Front-End</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__item__link">Infraestrutura</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__item__link">Business</a>
+                </li>
+
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__item__link">Design & UX</a>
+                </li>
+
+
+            </ul>
+
+
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+            <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
+
+        </ul>
+
         <div class="container">
 
-            <a href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+            <a href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos"
+                    class="container__imagem imagem__favorito"></a>
             <a href="#"><img src="assets/Compras.svg" alt="Minhas compras" class="container__imagem"></a>
             <a href="#"><img src="assets/Usuário.svg" alt="Logo do usario" class="container__imagem"></a>
 
@@ -83,55 +130,63 @@
 
     <section class="carrossel">
         <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
+        <div class="carrossel__container">
+            <div class="swiper">
 
-        <div class="swiper">
+                <div class="swiper-pagination"></div>
 
-            <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./assets/ApacheKafka.svg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./assets/Arquitetura.svg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./assets/Javascript.svg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./assets/Tuning.svg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./assets/Portugol.svg" alt="#"></div>
 
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="./assets/ApacheKafka.svg" alt="#"></div>
-                <div class="swiper-slide"><img src="./assets/Arquitetura.svg" alt="#"></div>
-                <div class="swiper-slide"><img src="./assets/Javascript.svg" alt="#"></div>
-                <div class="swiper-slide"><img src="./assets/Tuning.svg" alt="#"></div>
-                <div class="swiper-slide"><img src="./assets/Portugol.svg" alt="#"></div>
-
-            </div>
-            <!-- If we need pagination -->
-
-
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-
-        </div>
-
-        <div class="card">
-
-            <div class="card__descricao">
-
-                <div class="descricao">
-
-                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
-                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                    <p class="descricao__titulo-texto">Construindo uma aplicação integrada com a plataforma do Google.
-                    </p>
                 </div>
-                <img src="./assets/Angular.svg" class="descricao__imagem" alt="">
+                <!-- If we need pagination -->
+
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
+
 
             </div>
 
-            <div class="card_botoes">
-                <ul class="botoes">
-                    <li class="botoes__item"><img src="./assets/Favoritos.svg" alt="Favoritar livro"></li>
-                    <li class="botoes__item"><img src="./assets/Compras.svg" alt="Minhas Compras"></li>
+            <div class="card">
 
-                </ul>
-                <a href="" class="botoes__ancora">Saiba mais</a>
+                <div class="card__descricao">
+
+                    <div class="descricao">
+
+                        <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                        <p class="descricao__titulo-texto">Construindo uma aplicação integrada com a plataforma do
+                            Google.
+                        </p>
+                    </div>
+                    <img src="./assets/Angular.svg" class="descricao__imagem" alt="">
+
+                </div>
+
+                <div class="card_botoes">
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="./assets/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="./assets/Compras.svg" alt="Minhas Compras"></li>
+
+                    </ul>
+                    <a href="" class="botoes__ancora">Saiba mais</a>
+                </div>
+
             </div>
+
         </div>
+
+
 
 
 
@@ -143,57 +198,60 @@
     <section class="carrossel">
         <h2 class="carrossel__titulo">Mais vendidos</h2>
 
-        <div class="swiper">
+        <div class="carrossel__container">
 
-            <div class="swiper-pagination"></div>
+            <div class="swiper">
 
-            
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="./assets/Acessibilidade.svg" alt="#"></div>
-                <div class="swiper-slide"><img src="./assets/Guia Front-end.svg" alt="#"></div>
-                <div class="swiper-slide"><img src="./assets/MEAN.svg" alt="#"></div>
-                <div class="swiper-slide"><img src="./assets/Acessibilidade.svg" alt="#"></div>
-                <div class="swiper-slide"><img src="./assets/Gestão2.svg" alt="#"></div>
-                <div class="swiper-slide"><img src="./assets/Liderança.svg" alt="#"></div>
+                <div class="swiper-pagination"></div>
 
 
-            </div>
-            <!-- If we need pagination -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="./assets/Acessibilidade.svg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./assets/Guia Front-end.svg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./assets/MEAN.svg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./assets/Acessibilidade.svg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./assets/Gestão2.svg" alt="#"></div>
+                    <div class="swiper-slide"><img src="./assets/Liderança.svg" alt="#"></div>
 
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-
-        </div>
-
-        <div class="card">
-
-            <div class="card__descricao">
-
-                <div class="descricao">
-
-                    <h3 class="descricao__titulo">Autora do Mês</h3>
-                    <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
-                    <p class="descricao__titulo-texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. 
-                    </p>
                 </div>
-                <img src="./assets/Perfil-escritora 1.svg" class="descricao__imagem" alt="">
+                <!-- If we need pagination -->
+
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
 
             </div>
 
-            <div class="card_botoes">
-                <ul class="botoes">
-                    <li class="botoes__item"><img src="./assets/Favoritos.svg" alt="Favoritar livro"></li>
-                    <li class="botoes__item"><img src="./assets/Compras.svg" alt="Minhas Compras"></li>
+            <div class="card">
 
-                </ul>
-                <a href="" class="botoes__ancora">Saiba mais</a>
+                <div class="card__descricao">
+
+                    <div class="descricao">
+
+                        <h3 class="descricao__titulo">Autora do Mês</h3>
+                        <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                        <p class="descricao__titulo-texto">Analista de sistemas e escritora, Juliana é especialista em
+                            Front-End.
+                        </p>
+                    </div>
+                    <img src="./assets/Perfil-escritora 1.svg" class="descricao__imagem" alt="">
+
+                </div>
+
+                <div class="card_botoes">
+                    <ul class="botoes">
+                        <li class="botoes__item"><img src="./assets/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botoes__item"><img src="./assets/Compras.svg" alt="Minhas Compras"></li>
+
+                    </ul>
+                    <a href="" class="botoes__ancora">Saiba mais</a>
+                </div>
             </div>
         </div>
-
 
 
     </section>
@@ -242,16 +300,19 @@
                 <a href="#" class="topicos__link">Java</a>
             </li>
 
-            
+
         </ul>
 
     </section>
 
     <section class="contatos">
+        <div class="contatos__descricao">
 
-        <h2 class="contatos__titulo">Fique por dentro das novidades!</h2>
+            <h2 class="contatos__titulo">Fique por dentro das novidades!</h2>
 
-        <p class="contatos__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <p class="contatos__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+
         <input type="email" class="contatos__email" placeholder="Cadastre seu e-mail">
 
 

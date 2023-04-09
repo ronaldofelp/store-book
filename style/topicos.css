@@ -32,3 +32,33 @@
 .topicos__link {
     color: var(--cor-branco);
 }
+
+@media (min-width: 1024px) {
+
+   
+    .topicos__titulo {
+        font-size: 1.5rem;
+    }
+
+    .topicos__link{
+        font-size: 1.5rem;
+    }
+
+}
+
+
+    
+
+    @media (min-width: 1728px){
+
+        .topicos {
+            height: 418px;
+            padding: 3em 40em;
+        
+        }
+
+        .topicos__titulo {
+            font-size: 2rem;
+        }
+
+    }

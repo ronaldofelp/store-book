@@ -6,3 +6,12 @@
     border-top: 1px solid var(--cor-cinza-borda);
 }
 
+
+
+@media (min-width: 1024px) {
+
+    .roda-pe{
+        display: block;
+    }
+
+}
